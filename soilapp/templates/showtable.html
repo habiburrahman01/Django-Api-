@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block datatable %}
+
+<table class="table table-borderless">
+  <thead class="border-bottom font-weight-bold">
+      <tr>
+          <td>ID</td>
+          <td>Name</td>
+          <td>Image</td>
+          <td>           
+          </td>
+      </tr>
+  </thead>
+  <tbody>
+      {% for items in soil %}
+          <tr>
+              <td>{{items.ID}}</td>
+              <td>{{items.Name}}</td>
+              <td>{{items.ImagePath}}</td>
+              <td>
+
+              </td>
+          </tr>
+      {% endfor %}
+  </tbody>
+</table>
+
+{% endblock datatable %}
+
+
+

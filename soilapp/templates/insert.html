@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block insertform %}
+
+
+
+<form action=" " method="post" >
+{% csrf_token %}
+{{form}}
+  <div class="form-group mt-2">
+  
+  <button type="submit" class="btn btn-primary mt-2">Submit</button>
+</form>
+
+
+{% endblock insertform %}
